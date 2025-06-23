@@ -22,7 +22,7 @@ def check_password_strength(password):
   else:
     print("Password must contain at least 1 lowercase character.")
   
-  if re.search(r"[/d]", password): # Checking the password has a number.
+  if re.search(r"/d", password): # Checking the password has a number.
     score += 1
   else:
     print("Password must contain at least 1 number.")
